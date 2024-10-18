@@ -1,0 +1,7 @@
+<% params %>
+
+<h1>Result:</h1>
+<div>APR: <br><%= @apr.to_fs(:percentage, {:precision => 4})%></div>
+<div>Number of Years Remaining: <br><%= @years_remaining %></div>
+<div>Prinicpal: <br><%= @principal.to_fs(:currency)%></div>
+<div>Monthly Payment: <br><%= @payment.to_fs(:currency)%></div>
